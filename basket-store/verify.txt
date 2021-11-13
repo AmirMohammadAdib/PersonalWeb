@@ -1,0 +1,37 @@
+<?php
+include "../database/db.php";
+
+$total = $_GET['amount'];
+$id = $_GET['user'];
+
+if (!isset($_POST['transid'])) {
+    return;
+}
+
+$data = [
+    'pin' => 'aqayepardakht',
+    'amount' => $total,
+    'transid' => $_POST['transid']
+];
+$data = json_encode($data);
+$ch = curl_init('https://panel.aqayepardakht.ir/api/verify');
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($ch, CURLINFO_HEADER_OUT, true);
+curl_setopt($ch, CURLOPT_POST, true);
+curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
+curl_setopt(
+    $ch,
+    CURLOPT_HTTPHEADER,
+    array(
+        'Content-Type: application/json',
+        'Content-Length: ' . strlen($data)
+    )
+);
+$result = curl_exec($ch);
+curl_close($ch);
+if ($result === "1") {
+    $set_user = $conn->prepare('UPDATE store SET status = 1 WHERE user_id=?');
+    $set_user->bindValue(1, $id);
+    $set_user->execute();
+} elseif ($result === "0") {
+}

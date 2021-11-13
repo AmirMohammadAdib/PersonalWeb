@@ -1,0 +1,78 @@
+@font-face {
+  font-family: iransans;
+  src: url(font/iran-sans-400.woff) format('woff');
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  direction: rtl;
+  font-family: iransans;
+}
+
+html {
+  background-color: #f3f3f3;
+}
+a.btn {
+  display: inline-block;
+  padding: 7px 10px;
+  background-color: #3498db;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 3px;
+  border: 1px solid #2980b9;
+  font-size: 13px;
+}
+
+a.btn:hover {
+  background-color: #2980b9;
+  cursor: pointer;
+}
+
+input[type = "text"],
+input[type = "email"],
+input[type = "password"],
+input[type = "file"],
+textarea {
+  border: 1px solid #ccc;
+  padding: 7px;
+  border-radius: 3px;
+  width: 100%;
+}
+
+input[type = "submit"],
+input.submit {
+  border: 1px solid #27ae60;
+  padding: 7px 10px;
+  background-color: #2ecc71;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+input[type = "submit"],
+input.submit:hover {
+  border: 1px solid #27ae60;
+  background-color: #27ae60;
+}
+
+select {
+  border: 1px solid #e3e3e3;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.containers {
+  width: 500px;
+  margin: 0 auto;
+  border: 1px solid #cccccc;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 3px;
+  margin-top: 20px;
+}
+
+#upload-form .form-element {
+  margin: 10px 0;
+}

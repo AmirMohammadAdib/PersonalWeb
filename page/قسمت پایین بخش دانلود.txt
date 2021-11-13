@@ -1,0 +1,14 @@
+<div class="content-video-part" style="display: block;"><br>
+                        <div class="name-video-to">
+                            <p>ساختار و قواعد دستوری زبان جاوا اسکریپت</p>
+                        </div>
+                        <div class="video">
+                            <video src="video/31c93769118709785995ecd4da9c568023654136-1080p.mp4">
+                                <source src="video/31c93769118709785995ecd4da9c568023654136-1080p.mp4">
+                            </video>
+                        </div>
+                        <div class="caption-video-part">
+                            <p>ساختار و قواعد دستوری زبان JavaScript
+                            </p>
+                        </div>
+                    </div>

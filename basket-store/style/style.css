@@ -1,0 +1,275 @@
+            .damin-page {
+                margin-top: 20px;
+            }
+            
+            .damin-page p {
+                color: rgb(123, 127, 132);
+                font-family: 'vazir';
+                text-align: right;
+            }
+            
+            .warning {
+                background-color: rgb(250, 246, 215);
+                padding: 5px;
+                display: flex;
+                justify-content: right;
+                border-radius: 3px;
+            }
+            
+            .warning p {
+                font-family: 'vazir';
+                margin: 5px;
+                color: rgb(91, 85, 38);
+            }
+            
+            .box-course {
+                width: 100%;
+                padding: 1%;
+                box-shadow: 0px 0px 5px #cdd3dbdb;
+                border: none;
+                border-radius: 5px;
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: space-between;
+                margin-bottom: 20px;
+            }
+            
+            .img-box {
+                width: 40%;
+            }
+            
+            .img-box img {
+                width: 100%;
+                border-radius: 5px;
+            }
+            
+            .titre h1 {
+                font-size: 1.1rem;
+                font-family: 'vazir';
+                color: #333;
+                width: 100%;
+                text-align: right;
+                /* margin-left: -15px; */
+            }
+            
+            .teacher p {
+                font-size: 19px;
+                font-family: 'hekaiyat';
+                color: #7c8187db;
+            }
+            
+            .date p {
+                font-size: 13px;
+                font-family: 'vazir';
+                color: #333;
+            }
+            
+            .pay h4 {
+                font-size: 35px;
+                font-family: 'hekaiyat';
+                color: rgb(65, 68, 71);
+            }
+            
+            .pay span {
+                color: #71c55e;
+            }
+            
+            .titre {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                width: 100%;
+            }
+            
+            .row-right {
+                display: flex;
+                flex-direction: row-reverse;
+                width: 60%;
+                height: 100%;
+            }
+            
+            .date_pay {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+            
+            .teacher {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                margin-right: 15px;
+            }
+            
+            .input-off {
+                width: 100%;
+                box-shadow: 0px 0px 5px #cdd3dbdb;
+                border-radius: 5px;
+                padding: 4%;
+            }
+            
+            .input-off input[type='text'] {
+                width: 75%;
+                border: 1px solid #cdd3bdbd;
+                padding: 3%;
+                outline: none;
+                text-align: right;
+                font-family: 'vazir';
+                border-radius: 5px 0px 0px 5px;
+                margin-right: -5px;
+            }
+            
+            .input-off input[type='submit'] {
+                background-color: #71c55e;
+                border: none;
+                padding: 3%;
+                color: #ffffff;
+                font-family: 'vazir';
+                border-radius: 0px 5px 5px 0px;
+                width: 25%;
+                cursor: pointer;
+            }
+            
+            .input-off input[type='submit']:hover {
+                background-color: #5db44a;
+            }
+            
+            .content-course {
+                display: flex;
+                flex-direction: row-reverse;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+            
+            .information-course {
+                width: 100%;
+                box-shadow: 0px 0px 5px #cdd3bdbd;
+                border-radius: 5px;
+                padding: 4%;
+                margin-top: 20px;
+            }
+            
+            .pay-div {
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: space-between;
+            }
+            
+            .pay-div p {
+                font-family: 'vazir';
+                color: rgba(78, 82, 84, 0.966);
+            }
+            
+            .off-div {
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: space-between;
+            }
+            
+            .off-div p {
+                font-family: 'vazir';
+                color: rgba(73, 180, 233, 0.966);
+                text-shadow: 0px 0px 1px rgba(73, 180, 233, 0.966);
+            }
+            
+            .pay-finish p {
+                font-family: 'vazir';
+                text-align: center;
+                color: rgb(75, 82, 90);
+                font-size: 17px;
+            }
+            
+            .pay-finish input[type=submit] {
+                background-color: #71c55e;
+                width: 100%;
+                color: #ffffff;
+                font-family: 'vazir';
+            }
+            
+            .all-content {
+                display: flex;
+                justify-content: space-between;
+                flex-direction: row-reverse;
+            }
+            
+            .all-content {
+                display: flex;
+                flex-direction: row-reverse;
+            }
+            
+            .int-course {
+                width: 30%;
+            }
+            
+            .all-course-content {
+                width: 68%;
+            }
+            
+            .delete svg {
+                margin-top: -50px;
+                opacity: 0.7;
+                color: rgb(89, 95, 98);
+                transition: 0.1s;
+                cursor: pointer;
+            }
+            
+            .delete svg:hover {
+                color: rgb(252, 65, 65);
+                opacity: 0.9;
+            }
+            
+            @media screen and (max-width: 1190px) {
+                .titre h1 {
+                    width: 148%;
+                }
+                .img-box {
+                    width: 67%;
+                }
+            }
+            
+            @media screen and (max-width: 992px) {
+                .all-content {
+                    display: block;
+                }
+                .all-course-content {
+                    width: 100%;
+                }
+                .titre h1 {
+                    width: 141%;
+                }
+                .int-course {
+                    width: 100%;
+                }
+                .input-off {
+                    padding: 2%;
+                }
+            }
+            
+            @media screen and (max-width: 772px) {
+                .titre h1 {
+                    width: 170%;
+                }
+            }
+            
+            @media screen and (max-width: 569px) {
+                .img-box {
+                    display: none;
+                }
+                .titre h1 {
+                    width: 243px;
+                }
+                .pay h4 {
+                    font-size: 29px;
+                }
+            }
+            
+            @media screen and (max-width: 380px) {
+                .titre h1 {
+                    font-size: 1rem;
+                    width: 126%;
+                    text-align: right;
+                }
+                .pay h4 {
+                    font-size: 26px;
+                }
+            }
